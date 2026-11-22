@@ -206,9 +206,13 @@
                 <div class="leadership-info">
                     <div class="badge mb-2">LEADERSHIP</div>
                     <div class="profile-container">
-                        <img src="dhanusha_profile.jpg" alt="Dhanusha V S" class="profile-img">
+                        <img src="dhanusha_profile.jpg" alt="Dhanusha V S" class="profile-img" onerror="this.style.display='none'; document.getElementById('profileAvatarFallback').style.display='flex';">
+                        <div id="profileAvatarFallback" class="profile-avatar-fallback" style="display: none;">
+                            <span>DV</span>
+                        </div>
                         <div>
                             <h2 class="section-title" style="margin-bottom: 0;">Dhanusha V S</h2>
+                            <h3 class="ceo-title" style="margin: 0.25rem 0 0; font-size: 1rem; color: var(--primary);">Founder &amp; CEO</h3>
                         </div>
                     </div>
                     <p class="ceo-desc">Leading Yuti Solutions with a vision to empower businesses through innovative software architecture and robust digital engineering. With an M.Tech in Embedded Systems and over 14 years of engineering experience across diverse industries, she brings deep technological expertise to drive customer success.</p>

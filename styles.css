@@ -537,6 +537,22 @@ a:hover {
     box-shadow: 0 4px 15px var(--glow-cyan);
 }
 
+.profile-avatar-fallback {
+    width: 86px;
+    height: 86px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #1e3a8a, #0ea5e9);
+    color: #ffffff;
+    font-size: 1.75rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid var(--primary);
+    box-shadow: 0 4px 15px var(--glow-cyan);
+    letter-spacing: 1px;
+}
+
 .ceo-title {
     color: var(--secondary);
     font-size: 1.15rem;
