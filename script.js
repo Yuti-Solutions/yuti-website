@@ -42,8 +42,12 @@ const revealElements = () => {
 
 window.addEventListener('scroll', revealElements);
 window.addEventListener('resize', revealElements);
-document.addEventListener('DOMContentLoaded', () => {
-    revealElements();
-    // Safety check after brief render
-    setTimeout(revealElements, 100);
-});
+window.addEventListener('load', revealElements);
+
+// Immediate and staged execution to ensure all elements are visible
+revealElements();
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', revealElements);
+}
+setTimeout(revealElements, 100);
+setTimeout(revealElements, 400);
